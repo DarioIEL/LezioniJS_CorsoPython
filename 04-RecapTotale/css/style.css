@@ -1,0 +1,39 @@
+/* Commento in css */
+
+/* 1° modo per fornire regole, selettore tag */
+/* In questo caso tutti gli h1 della pagina avranno le stesse regole */
+h1{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+
+p{
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 
+li{
+    text-decoration: underline;
+} */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: bisque;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    background-color: red;
+    margin: 10px;
+}
+
+a:hover{
+    background-color: blue;
+}

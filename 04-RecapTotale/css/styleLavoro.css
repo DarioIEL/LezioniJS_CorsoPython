@@ -1,0 +1,20 @@
+
+/* L'id viene richiamato attraverso # */
+
+#tecnologie{
+    text-align: justify;
+    margin: 20px;
+}
+
+/* solo il tag h2 figlio di tecnologie è di color.. */
+#tecnologie h2{
+    color: red;
+}
+
+#tecnologie p{
+    color: blue
+}
+
+.paragrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

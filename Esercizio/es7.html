@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="get">
+        <input type="text" name="nome" id="nome">
+        <input type="button" name="" id="btn" value="Invia">
+    </form>
+
+    <div id="risultato"></div>
+
+    <script>
+
+        function scriviNome(){
+            let nome = document.getElementById("nome").value;
+            let risultato = document.getElementById("risultato");
+            risultato.textContent = nome;
+            document.getElementById("nome").value= "";
+        }
+
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", scriviNome);
+
+
+    </script>
+
+    <script src=""></script>
+</body>
+</html>
