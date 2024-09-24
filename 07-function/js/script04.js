@@ -14,4 +14,4 @@ let btn = document.getElementById("btn");
 //Sistema moderno di gestione eventi: EventListener
 //3 parametri eventListener ("eventoSenzaOn", nomeFunzione, boolean)
 //ATT: la funzione è richiamata, solo in questo caso, senza le parentesi ()
-btn.addEventListener("click", inviaMessaggio, true);
+btn.addEventListener("click", inviaMessaggio);

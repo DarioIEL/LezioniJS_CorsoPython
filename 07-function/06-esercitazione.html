@@ -17,14 +17,17 @@
     
     Quando ho finito di inserire i prodotti, al click su Calcola totale verrà stampato il totale all'interno del tag H2.
     
-    Consiglio: crea due array distinti e separati nei quali inserisci in uno i prodotti nell'altro i prezzi -->
+    Consiglio: crea due array distinti e separati nei quali inserisci in uno i prodotti nell'altro i prezzi 
+    
+    ATT: tutto ciò che recupero da un campo input è sempre una stringa. Il type="number" non influisce sul tipo di dato, mai.
+    -->
 
     <form>
 
         <input type="text" placeholder="prodotto" id="nomeProd">
         <input type="number" placeholder="prezzo" id="prezzoProd">
 
-        <input type="button" value="Aggiungi">
+        <input type="button" value="Aggiungi" id="btnAdd">
     </form>
 
     <ul id="listaSpesa">
@@ -32,8 +35,10 @@
     </ul>
 
     <button id="btnTotale">Calcola Totale</button>
-
     <h3 id="grandTotal"></h3>
+
+
+    <h3 id="numTotArticoli"></h3>
 
     <script src="./js/script06.js"></script>
 </body>
