@@ -1,0 +1,34 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.navbar a{
+
+    margin: 20px;
+    color: azure;
+    text-decoration: none;
+
+}
+
+.container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.boxImg{
+    width:25%;
+    height: auto;
+    display: block;
+    float: left;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.img{
+    width: 100%;
+}
