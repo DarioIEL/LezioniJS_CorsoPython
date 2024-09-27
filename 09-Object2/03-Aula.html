@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ù, initial-scale=1.0">
+    
     <title>Document</title>
 </head>
 <body>
@@ -13,10 +13,21 @@
      Inventa un sistema di assegnazione automatica della matricola, il campo input dovrà essere già pieno nel momento in cui sono presenti studenti. 
      Quando aggiungo uno studente verrà automaticamente visualizzato nell'elenco studenti sottostante il form. Parti con 3 studenti già dichiarati-->
 
-    <form>
+    <form id="mioForm">
+        <input type="text" id="nomeStudente" placeholder="Nome Studente"> <br>
+        <input type="text" id="cognomeStudente" placeholder="Cognome Studente"> <br>
+        <input type="number" id="matricolaStudente" disabled> <br>
+        
+        <select name="corso" id="corsoIscrizione">
+            <option value="" disabled selected>Scegli Corso</option>
+            <option value="informatica">Informatica</option>
+            <option value="matematica">Matematica</option>
+            <option value="fisica">Fisica</option>
+            <option value="chimica">Chimica</option>
+        </select>
 
-
-        <input type="button">
+        <br>
+        <input type="button" value="Invia" id="btnInvia">
     </form>
     <hr>
 
