@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Number</h1>
+
+
+    <script>
+
+        let num1 = 123;
+
+        let num2 = "123";
+
+        console.log(isNaN(num1));
+        console.log(isNaN(num2));
+        
+
+        let num3 = 12.8;
+
+        console.log(parseInt(num3));
+        console.log(parseFloat(num1));
+        
+        console.log(parseInt(1011001100010010001, 2));
+    
+        //Math
+
+        let num5 = -44;
+
+        console.log(Math.abs(num5));
+        console.log(Math.pow(num5, 2));
+
+        //arrotondamenti
+
+        let num6 = 3.5563;
+
+        console.log(Math.ceil(num6)); //arrotonda all'intero maggiore
+        console.log(Math.floor(num6)); //arrotonda all'intero minore
+        console.log(Math.round(num6));
+        
+        //Math.random
+
+        console.log(Math.random());
+        
+        console.log(Math.ceil(Math.random() * 10));
+
+        console.log(Math.ceil(Math.random() * 15) + 10);
+    </script>
+</body>
+</html>
