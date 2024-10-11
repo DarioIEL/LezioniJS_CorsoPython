@@ -17,7 +17,7 @@ console.log(typeof studente);
 //Scrivo lo studente in formato JSON (praticamente una stringa)
 let studenteJSON = '{"nome":"pippo", "cognome":"rossi", "matricola": 1, "corsi":["html", "js", "py"]}';
 
-console.log(studenteJSON.nome);
+console.log(studenteJSON.nome); //undefined
 console.log(typeof studenteJSON);
 console.log( studenteJSON);
 
