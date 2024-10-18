@@ -9,6 +9,14 @@ class Pianta{
     }
 }
 
+class ObjPerCarrello{
+    constructor(id, prezzo, nome){
+        this.id = id;
+        this.prezzo = prezzo;
+        this.nome = nome;
+    }
+}
+
 
 //Creo una funzione per caricare le informazioni delle piante sulla index. Le info sono contenute nel mio db.json
 function caricaPiante(){
@@ -78,16 +86,22 @@ function creaCard(pianta){
 }
 
 
-class objPerCarrello{
-    constructor(id, prezzo, nome){
-        this.id = id;
-        this.prezzo = prezzo;
-        this.nome = nome;
-    }
-}
-
 
 function addACarrello(id, prezzo, nome){
     //fetch method POST
     console.log(id, prezzo, nome);
+    const URLCarrello = "http://localhost:3000/carrello";
+
+    let objPerCarrello = new ObjPerCarrello(id, prezzo, nome);
+
+    fetch(URLCarrello, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(objPerCarrello)
+    }).then(data =>{
+        return data.json();
+    })
+
 }
