@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nesciunt quaerat iusto maiores. Voluptatem dolorem facilis eligendi id ipsum enim?</p>
+
+<h3>Lista della Spesa</h3>
+<ul>
+  @for (item of itemsSpesa; track $index) {
+    <li>
+      {{item}} {{index}}
+    </li>
+  }
+</ul>
+
+<h3>Presenza: {{presenza}}</h3>
+
+
+<router-outlet />
