@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <h1>{{title}}</h1>
 
 
@@ -6,13 +8,34 @@
 <h3>Lista della Spesa</h3>
 <ul>
   @for (item of itemsSpesa; track $index) {
-    <li>
-      {{item}} {{index}}
-    </li>
+    <li>{{item}}</li>
   }
+</ul>
+
+<ul>
+  <!-- Versione Legacy, vecchie versioni di Angular . ATT: devo fare l'import della direttiva ngFor nel mio component-->
+  <li *ngFor="let item of itemsSpesa">
+    {{item}}
+  </li>
 </ul>
 
 <h3>Presenza: {{presenza}}</h3>
 
+@if(presenza){
+  <h3>L'elemento è presente</h3>
+}@else {
+  <h3>L'elemento è assente</h3>
+}
 
-<router-outlet />
+<!-- Versione Legacy  -->
+ <h3 *ngIf="presenza; else nonPresenza"> L'elemento è presente</h3>
+
+ <ng-template #nonPresenza>
+  <h3>L'elemento è assente</h3>
+ </ng-template>
+
+ 
+ <app-users></app-users>
+ 
+ <router-outlet />
+ <app-footer></app-footer>
